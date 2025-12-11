@@ -15,14 +15,14 @@ export const Hero = () => {
             Gustavo Costa <span className="text-text-muted">Arquitetura</span>
           </h1>
           <Button variant="cta" size="sm" onClick={scrollToForm} className="hidden md:flex">
-            Quero minha análise inicial
+            Agendar análise do terreno
           </Button>
         </div>
       </header>
 
       {/* Hero Image */}
-      <div className="relative w-full h-[70vh] md:h-[80vh]">
-        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-transparent to-background z-10" />
+      <div className="relative w-full h-[60vh] md:h-[70vh]">
+        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background z-10" />
         <img
           src={heroImage}
           alt="Projeto residencial contemporâneo com linhas limpas e integração com a natureza"
@@ -31,20 +31,27 @@ export const Hero = () => {
       </div>
 
       {/* Hero Content */}
-      <div className="section-container py-12 md:py-16 lg:py-20">
-        <div className="max-w-3xl">
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-light leading-tight tracking-tight text-foreground fade-in-up">
-            Arquitetura que transforma sua vida e o seu lugar para melhor.
+      <div className="section-container py-16 md:py-20 lg:py-28">
+        <div className="max-w-4xl">
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light leading-[1.15] tracking-tight text-foreground fade-in-up">
+            Arquitetura que transforma a vida — com precisão, luz e rigor poético.
           </h2>
-          <p className="mt-6 text-lg md:text-xl text-text-secondary font-light leading-relaxed fade-in-up" style={{ animationDelay: "0.1s" }}>
-            Projetos residenciais exclusivos, pensados para a sua rotina, clima e trajetória.
+          <p className="mt-8 text-lg md:text-xl lg:text-2xl text-text-secondary font-light leading-relaxed max-w-3xl fade-in-up" style={{ animationDelay: "0.1s" }}>
+            Projetos residenciais de alto padrão guiados por fluidez espacial, estética sensorial e clareza técnica desde o primeiro traço.
           </p>
-          <div className="mt-8 md:mt-10 fade-in-up" style={{ animationDelay: "0.2s" }}>
+          <div className="mt-10 md:mt-12 fade-in-up" style={{ animationDelay: "0.2s" }}>
             <Button variant="cta" size="lg" onClick={scrollToForm}>
-              Quero minha análise inicial
+              Agendar análise do terreno
             </Button>
           </div>
         </div>
+      </div>
+
+      {/* Mobile CTA repeat */}
+      <div className="section-container pb-8 md:hidden">
+        <Button variant="cta" size="lg" onClick={scrollToForm} className="w-full">
+          Agendar análise do terreno
+        </Button>
       </div>
     </section>
   );
